@@ -98,15 +98,15 @@ person.sayHello = function () {
 
 person.sayHello(); // Hello !
 
-// Object.keys()
+// * Object.keys()
 console.log(Object.keys(person));
 // ['firstName', 'lastName', 'age', 'height', 'email', 'sayHello']
 
-// Object.values()
+// * Object.values()
 console.log(Object.values(person));
 // ['faisal', 'khan', 23, '5.10', 'faisal@gmail.com', ƒ]
 
-// Object.entries()
+// *Object.entries()
 // let entries = Object.entries(person);
 // console.log(entries);
 
