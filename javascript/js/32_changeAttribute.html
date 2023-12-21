@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        /* margin: 0; */
+        /* padding: 0; */
+        /* box-sizing: border-box; */
+        font-family: fantasy;
+        /* font-family: "'Times New Roman', Times, serif"; */
+        font-size: 22px;
+        background: #000000;
+        color: #ff9a00;
+        text-transform: capitalize;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #09ff00;
+        font-size: 48px;
+        font-family: fantasy;
+      }
+
+      #myButton {
+        background-color: #c900ff;
+        color: #fbfaf4;
+        padding: 5px 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myButton" type="button" onclick="changeAttributes()">
+      Click Me
+    </button>
+  </body>
+
+  <script>
+    function changeAttributes() {
+      // Accessing the button element
+      let button = document.getElementById("myButton");
+
+      // Adding attributes to the button
+      button.setAttribute("title", "My Button Title");
+      button.setAttribute("style", "color: blue; font-weight: bold;");
+      button.setAttribute("data-custom", "Custom Attribute Value");
+    }
+  </script>
+</html>

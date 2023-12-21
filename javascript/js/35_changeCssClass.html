@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        /* margin: 0; */
+        /* padding: 0; */
+        /* box-sizing: border-box; */
+        /* font-family: fantasy; */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 18px;
+        /* background: #000000; */
+        color: #ff9a00;
+        text-transform: capitalize;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #09ff00;
+        font-size: 48px;
+        font-family: fantasy;
+      }
+
+      #myButton {
+        background-color: #fbfaf4;
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #000000;
+      }
+
+      .oldClass {
+        color: red;
+        font-weight: bold;
+      }
+
+      .newClass {
+        color: blue;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Change CSS Classes</h2>
+    <p>1. Using classList Property</p>
+    <p>2. Using className property</p>
+    <button
+      id="myButton"
+      class="oldClass"
+      type="button"
+      onclick="changeClass()"
+    >
+      Click Me
+    </button>
+  </body>
+
+  <script>
+    // function changeClass() {
+    //   // Accessing the button element
+    //   let button = document.getElementById("myButton");
+
+    //   // Adding or removing CSS classes
+    //   button.classList.add("newClass"); // Adds a new CSS class
+    //   button.classList.remove("oldClass"); // Removes an existing CSS class
+    // }
+
+    // More dynamic code
+
+    //  1. Using classList Property
+    // function changeClass() {
+    //   // Accessing the button element
+    //   let button = document.getElementById("myButton");
+
+    //   // Toggle between classes
+    //   if (button.classList.contains("oldClass")) {
+    //     button.classList.remove("oldClass");
+    //     button.classList.add("newClass");
+    //   } else {
+    //     button.classList.remove("newClass");
+    //     button.classList.add("oldClass");
+    //   }
+    // }
+
+    //  2. Using className Property
+    function changeClass() {
+      // Accessing the button element
+      let button = document.getElementById("myButton");
+
+      // Toggle between classes
+      if (button.className === "oldClass") {
+        button.className = "newClass";
+      } else {
+        button.className = "oldClass";
+      }
+    }
+  </script>
+</html>
