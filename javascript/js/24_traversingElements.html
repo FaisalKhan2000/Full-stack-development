@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        /* margin: 0; */
+        /* padding: 0; */
+        /* box-sizing: border-box; */
+        font-family: fantasy;
+        /* font-family: "'Times New Roman', Times, serif"; */
+        font-size: 22px;
+        background: #000000;
+        color: #ff9a00;
+        text-transform: capitalize;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #09ff00;
+        font-size: 48px;
+        font-family: fantasy;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Traversing Elements</h1>
+    <ul id="myList">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+      <li>list 4</li>
+      <li>list 5</li>
+    </ul>
+  </body>
+
+  <script>
+    let myList = document.getElementById("myList");
+
+    // Accessing the parent element of the list
+    let parentElement = myList.parentElement;
+    console.log("Parent Element:", parentElement); // Output: The parent element of the list (could be a div, section, body, etc.) -- body
+
+    // Accessing the first and last child elements
+    let firstChild = myList.firstElementChild;
+    let lastChild = myList.lastElementChild;
+
+    console.log("First Child Element:", firstChild); // Output: The first <li> element within the list -- <li>list 1</li>
+    console.log("Last Child Element:", lastChild); // Output: The last <li> element within the list -- <li>list 5</li>
+
+    // Accessing all child elements
+    let childrenElements = myList.children;
+    console.log("Children Elements:", childrenElements); // Output: HTMLCollection of <li> elements within the list -- HTMLCollection(5) [li, li, li, li, li]
+
+    // Accessing next and previous sibling elements
+    let nextSiblingElement = myList.nextElementSibling;
+    let prevSiblingElement = myList.previousElementSibling;
+
+    console.log("Next Sibling Element:", nextSiblingElement); // Output: The next sibling element (could be null if there's none) -- script
+    console.log("Previous Sibling Element:", prevSiblingElement); // Output: The previous sibling element (could be null if there's none) -- h1
+  </script>
+</html>
