@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: fantasy;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="myInput" placeholder="Type something..." />
+  </body>
+
+  <script>
+    // window.addEventListener("keydown", function (e) {
+    //   console.log(e.key);
+    // });
+
+    let myInput = document.getElementById("myInput");
+
+    // // keydown --> Fired when a key on the keyboard is pressed down.
+    // myInput.addEventListener("keydown", function (e) {
+    //   console.log(e.key);
+    // });
+
+    // // keyup --> Fired when a key on the keyboard is released after being pressed.
+    // myInput.addEventListener("keyup", function (e) {
+    //   console.log(e.key);
+    // });
+
+    // keypress --> Fired when a key that produces a character value is pressed down. This event is not fired for keys like Shift, Ctrl, Alt, etc.
+    myInput.addEventListener("keypress", function (e) {
+      console.log(e.key);
+    });
+  </script>
+</html>

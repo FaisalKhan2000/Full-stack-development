@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: fantasy;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+
+      /* Style to create a long content for scrolling */
+      body {
+        height: 2000px; /* Adjust the height to create a scrollable area */
+      }
+    </style>
+  </head>
+  <body>
+    <p>Scroll down to trigger the scroll event!</p>
+  </body>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      console.log("Scrolling detected!");
+    });
+  </script>
+</html>
