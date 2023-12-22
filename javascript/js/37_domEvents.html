@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        /* margin: 0; */
+        /* padding: 0; */
+        /* box-sizing: border-box; */
+        /* font-family: fantasy; */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 18px;
+        /* background: #000000; */
+        color: #ff9a00;
+        text-transform: capitalize;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #09ff00;
+        font-size: 48px;
+        font-family: fantasy;
+      }
+
+      .oldClass {
+        /* color: red; */
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button id="myButton" type="button" onclick="btnClicked()">Click Me</button> -->
+    <button id="myButton" type="button">Click Me</button>
+  </body>
+
+  <script>
+    //     DOM (Document Object Model) events in JavaScript are actions or occurrences that happen in the document, such as user interactions (like clicks or key presses) or changes in the document state (like loading or resizing). These events can be detected and handled using event listeners in JavaScript.
+
+    // Types of DOM Events:
+
+    // Mouse Events:
+    // click, dblclick, mouseover, mouseout, mousemove, mousedown, mouseup, etc.
+
+    // Keyboard Events:
+    // keydown, keyup, keypress
+
+    // Form Events:
+    // submit, change, focus, blur
+
+    // Document Loading Events:
+    // load, DOMContentLoaded
+
+    // Window Events:
+    // resize, scroll
+
+    let myButton = document.getElementById("myButton");
+
+    myButton.addEventListener("click", function () {
+      console.log("Button was clicked!");
+    });
+    myButton.addEventListener("mouseover", function () {
+      console.log("mouserover is activated");
+    });
+    myButton.addEventListener("mouseout", function () {
+      console.log("mouseout is activated");
+    });
+  </script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        /* margin: 0; */
+        /* padding: 0; */
+        /* box-sizing: border-box; */
+        /* font-family: fantasy; */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 18px;
+        /* background: #000000; */
+        color: #ff9a00;
+        text-transform: capitalize;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #09ff00;
+        font-size: 48px;
+        font-family: fantasy;
+      }
+
+      .oldClass {
+        /* color: red; */
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="myImage"
+      class="myImage"
+      width="500px"
+      src="../image.jpeg"
+      alt=""
+    />
+    <script>
+      /*
+        Page load events in JavaScript refer to events that occur during the loading process of a webpage. These events help developers execute functions or scripts at different stages of the page loading cycle. Here are some common page load events:
+
+        1. DOMContentLoaded Event:
+        Fired when the HTML content is fully loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+        Ideal for executing JavaScript that doesn't rely on external resources.
+       
+        document.addEventListener('DOMContentLoaded', function() {
+        // Code to run after the DOM is fully loaded
+        });
+
+        2. load Event:
+        Fired when the entire page, including all external resources like images, stylesheets, and scripts, has finished loading.
+        Suitable for tasks requiring the complete rendering of the webpage.
+     
+        window.addEventListener('load', function() {
+        // Code to run after the entire page and its resources are loaded
+        });
+
+        3. beforeunload Event:
+        Fired just before the user navigates away from the page (e.g., by clicking a link, closing the tab/window).
+        Useful for showing a confirmation dialog or performing cleanup actions before leaving the page.
+      
+        window.addEventListener('beforeunload', function(event) {
+        // Display a confirmation message
+        event.returnValue = 'Are you sure you want to leave this page?';
+        });
+
+        Use Cases:
+
+        DOMContentLoaded: Used for initializing scripts, setting up event handlers, or performing actions that don't rely on external resources.
+
+        load: Used for tasks that need the entire page and its resources to be loaded, like handling images or initializing third-party scripts.
+
+        beforeunload: Used for warning users about unsaved changes or performing cleanup actions before they leave the page. 
+
+        */
+
+      window.addEventListener("DOMContentLoaded", function () {
+        console.log("Dom tree created");
+      });
+
+      let myImage = document.getElementById("myImage");
+
+      myImage.addEventListener("load", function () {
+        console.log("Fully Loaded");
+      });
+    </script>
+  </body>
+</html>
