@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: fantasy;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Input Events</p>
+    <input id="myInput" type="text" />
+  </body>
+
+  <script>
+    let myInput = document.getElementById("myInput");
+
+    // focus: Triggered when the input field gains focus.
+    // blur: Triggered when the input field loses focus.
+    // change: Triggered when the input value changes and the field loses focus.
+    // input: Triggered whenever the input value changes, even if the field remains in focus.
+
+    // focus
+    myInput.addEventListener("focus", function () {
+      myInput.style.background = "#c900ff";
+    });
+
+    // blur
+    myInput.addEventListener("blur", function () {
+      myInput.style.background = "white";
+    });
+
+    // change
+    // myInput.addEventListener("change", function () {
+    //   console.log(this.value);
+    // });
+
+    // input
+    myInput.addEventListener("input", function () {
+      console.log(this.value);
+    });
+  </script>
+</html>

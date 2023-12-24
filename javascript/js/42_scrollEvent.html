@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
       rel="stylesheet"
     />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
     <style>
       * {
         font-family: fantasy;
@@ -28,8 +34,30 @@
   </body>
 
   <script>
+    // // scroll --> detects any scroll
+    // window.addEventListener("scroll", function () {
+    //   console.log("Scrolling detected!");
+    // });
+
+    // wheel --> detects the direction of scroll
+    // deltay for vertical scroll
+    // deltax for horizontal scroll
+    window.addEventListener("wheel", function (e) {
+      if (e.deltaY < 0) {
+        console.log("scrolling up...");
+      } else if (e.deltaY > 0) {
+        console.log("scrolling down...");
+      }
+    });
+
+    // The pageXOffset and pageYOffset properties in JavaScript are used to get the number of pixels the document has already been scrolled horizontally and vertically, respectively.
+
     window.addEventListener("scroll", function () {
-      console.log("Scrolling detected!");
+      if (window.pageYOffset > 150) {
+        document.body.style.background = "#c900ff";
+      } else {
+        document.body.style.background = "white";
+      }
     });
   </script>
 </html>

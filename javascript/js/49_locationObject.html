@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+      body {
+        background: #fbfaf4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .myDiv {
+        background: #ff9a00;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .myButton {
+        background: #c900ff;
+        color: #fbfaf4;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <title>Location Object</title>
+
+    <div class="myDiv">
+      <button class="myButton" id="navigateTo">Navigate</button>
+      <button class="myButton" id="reloadPage">Reload</button>
+      <button class="myButton" id="replaceUrl">Replace URL</button>
+    </div>
+  </body>
+
+  <script>
+    // The Location object in JavaScript represents the current URL of the window and provides methods and properties to work with the URL.
+
+    // Properties of the Location Object:
+    // href: Returns the complete URL of the current page.
+    // protocol: Returns the protocol of the URL (e.g., "http:", "https:").
+    // host: Returns the hostname and port number of the URL.
+    // hostname: Returns the hostname of the URL.
+    // port: Returns the port number of the URL.
+    // pathname: Returns the path of the URL.
+    // search: Returns the query string part of the URL (everything after ?).
+    // hash: Returns the anchor part of the URL (everything after #).
+
+    // Accessing properties of the Location object
+    console.log("Complete URL:", location.href);
+    console.log("Protocol:", location.protocol);
+    console.log("Hostname:", location.hostname);
+    console.log("Pathname:", location.pathname);
+    console.log("Search:", location.search);
+    console.log("Hash:", location.hash);
+
+    let navigateTo = document.getElementById("navigateTo");
+    let reloadPage = document.getElementById("reloadPage");
+    let replaceUrl = document.getElementById("replaceUrl");
+
+    // Methods of the Location Object:
+    // assign(url): Loads a new document.
+    // reload(): Reloads the current document.
+    // replace(url): Replaces the current document with a new one.
+
+    let url = "https://www.youtube.com/";
+    navigateTo.addEventListener("click", function () {
+      location.assign(url);
+    });
+
+    reloadPage.addEventListener("click", function () {
+      location.reload();
+    });
+
+    replaceUrl.addEventListener("click", function () {
+      location.replace("https://www.espncricinfo.com/");
+    });
+  </script>
+</html>

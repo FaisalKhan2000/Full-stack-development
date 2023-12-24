@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+      body {
+        background: #fbfaf4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .myDiv {
+        background: #ff9a00;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .myButton {
+        background: #c900ff;
+        color: #fbfaf4;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="myDiv" class="myDiv">
+      <button id="myButton" class="myButton">button</button>
+    </div>
+  </body>
+
+  <script>
+    let myDiv = document.getElementById("myDiv");
+    let myButton = document.getElementById("myButton");
+
+    // Event bubbling
+
+    // In the event bubbling model, an event starts at the most specific element and then flows upward toward the least specific element (the document or even window).
+    // When you click the button, the click event occurs in the following order:
+    // button
+    // div with the id container
+    // body
+
+    // myDiv.addEventListener("click", function () {
+    //   console.log("Div clicked...");
+    // });
+    // myButton.addEventListener("click", function () {
+    //   console.log("Button clicked...");
+    // });
+    // document.body.addEventListener("click", function () {
+    //   console.log("Body clicked...");
+    // });
+
+    // Event capturing
+
+    // In the event capturing model, an event starts at the least specific element and flows downward toward the most specific element.
+
+    // When you click the button, the click event occurs in the following order:
+    // body
+    // div with the id container
+    // button
+
+    // myDiv.addEventListener(
+    //   "click",
+    //   function () {
+    //     console.log("Div clicked...");
+    //   },
+    //   true
+    // );
+    // myButton.addEventListener(
+    //   "click",
+    //   function () {
+    //     console.log("Button clicked...");
+    //   },
+    //   true
+    // );
+    // document.body.addEventListener(
+    //   "click",
+    //   function () {
+    //     console.log("Body clicked...");
+    //   },
+    //   true
+    // );
+
+    // if you want to stop the bubbling and capturing you can use
+    // e.stopPropagation()
+    myDiv.addEventListener("click", function (e) {
+      console.log("Div clicked...");
+      e.stopPropagation();
+    });
+    myButton.addEventListener("click", function (e) {
+      console.log("Button clicked...");
+      e.stopPropagation();
+    });
+    document.body.addEventListener("click", function (e) {
+      console.log("Body clicked...");
+      e.stopPropagation();
+    });
+  </script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+      body {
+        background: #fbfaf4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .myDiv {
+        background: #ff9a00;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .myButton {
+        background: #c900ff;
+        color: #fbfaf4;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <title>Navigator Object</title>
+  </body>
+
+  <script>
+    // The Navigator object in JavaScript provides information about the browser's application name, version, platform, and more. It's accessed through the navigator global object and offers properties and methods to interact with the browser's environment.
+
+    // Common Properties of the Navigator Object:
+    // navigator.userAgent: Returns the complete user-agent string of the browser.
+    // navigator.appName: Returns the name of the browser.
+    // navigator.appVersion: Returns the version information of the browser.
+    // navigator.platform: Returns the operating system platform of the browser.
+    // Common Methods of the Navigator Object:
+    // navigator.cookieEnabled: Indicates if cookies are enabled in the browser.
+    // navigator.language: Returns the preferred language of the user.
+    // navigator.geolocation: Provides access to the user's geographical location.
+    // navigator.mediaDevices: Allows access to media devices like cameras and microphones.
+    // navigator.permissions: Manages permissions for APIs.
+    // navigator.sendBeacon(): Sends data asynchronously to a web server.
+
+    // Accessing properties of the Navigator object
+    console.log("User Agent:", navigator.userAgent);
+    console.log("Browser Name:", navigator.appName);
+    console.log("Browser Version:", navigator.appVersion);
+    console.log("Platform:", navigator.platform);
+
+    // Using methods of the Navigator object
+    console.log("Cookies Enabled:", navigator.cookieEnabled);
+    console.log("Preferred Language:", navigator.language);
+    console.log("Geolocation:", navigator.geolocation);
+    console.log("Media Devices:", navigator.mediaDevices);
+    // ... and more
+  </script>
+</html>

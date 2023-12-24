@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+      body {
+        background: #fbfaf4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .myDiv {
+        background: #ff9a00;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .myButton {
+        background: #c900ff;
+        color: #fbfaf4;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="myDiv">
+      <button class="myButton" id="clearButton">clear</button>
+    </div>
+  </body>
+
+  <script>
+    let clearButton = document.getElementById("clearButton");
+
+    // let timeOut = setTimeout(function () {
+    //   alert("This will execute after 5 seconds");
+    // }, 5000);
+
+    let counter = 0;
+
+    let timeInterval = setInterval(function () {
+      console.log("This will execute after 2 seconds");
+      counter++;
+    }, 2000);
+    clearButton.addEventListener("click", function () {
+      clearInterval(timeInterval);
+      console.log(counter);
+    });
+  </script>
+</html>

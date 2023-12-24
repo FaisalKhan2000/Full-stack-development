@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+      body {
+        background: #fbfaf4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .myDiv {
+        background: #ff9a00;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .myButton {
+        background: #c900ff;
+        color: #fbfaf4;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body></body>
+
+  <script>
+    // Browser Object Model (BOM) in JavaScript.
+
+    // The Browser Object Model (BOM) is used to interact with the browser.
+
+    // The window object represents a window in browser.
+
+    // An object of window is created automatically by the browser.
+
+    // All global JavaScript objects, functions, and variables with the var keyword automatically become members of the window object.
+
+    // Global variables are properties of the window object.
+
+    // Global functions are methods of the window object.
+
+    // NOTE: If you don’t want to pollute the window object, you can use the let keyword to declare variables and functions.
+
+    // The default object of browser is window means you can call all the functions of window by specifying window or directly.
+
+    var x = 10;
+    console.log(x);
+
+    var y = 20;
+    console.log(window.y); // this will also work, since var is a member of window object
+
+    let z = 30;
+    console.log(window.z); // undefined --> since let and const are not members of window object
+
+    function greet() {
+      console.log("hello");
+    }
+
+    greet(); // hello
+    window.greet(); // hello
+
+    // window.alert();
+  </script>
+</html>

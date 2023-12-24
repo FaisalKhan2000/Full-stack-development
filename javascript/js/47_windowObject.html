@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+      body {
+        background: #fbfaf4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .myDiv {
+        background: #ff9a00;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .myButton {
+        background: #c900ff;
+        color: #fbfaf4;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <title>Window Object</title>
+
+    <div class="myDiv">
+      <button class="myButton" id="openButton">Open</button>
+      <button class="myButton" id="openButton2">Open2</button>
+      <button class="myButton" id="closeButton">Close</button>
+    </div>
+  </body>
+
+  <script>
+    console.log(window.innerWidth, window.innerHeight);
+    console.log(window.outerWidth, window.outerHeight);
+
+    let openButton = document.getElementById("openButton");
+    let openButton2 = document.getElementById("openButton2");
+    let closeButton = document.getElementById("closeButton");
+    let myWindow;
+    openButton.addEventListener("click", function () {
+      // window.open(url, name / target, features)
+      myWindow = window.open(
+        "https://www.mozilla.org/",
+        "myWindow",
+        "height=500, width=500"
+      );
+    });
+
+    openButton2.addEventListener("click", function () {
+      window.open("https://www.yahoo.com/", "myWindow");
+    });
+
+    closeButton.addEventListener("click", function () {
+      myWindow.close();
+    });
+  </script>
+</html>

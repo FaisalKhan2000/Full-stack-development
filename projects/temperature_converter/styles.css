@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "work sans";
+  /* background-image: url(./assets/images/background-pattern-desktop.svg); */
+  /* border: 1px dotted red; */
+  /* color: hsl(292, 42%, 14%); */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(275, 100%, 97%);
+}
+#heading {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: hsl(292, 42%, 14%);
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 0.5em;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; */
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+}
+
+.innerDivs {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  height: 3em;
+}
+
+.heading2 {
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+  font-size: 20px;
+}
+
+.input {
+  width: 70%;
+  height: 100%;
+  border-radius: 0.5em;
+  padding: 5px 10px;
+  color: hsl(292, 16%, 49%);
+}

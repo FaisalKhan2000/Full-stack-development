@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        color: #ff9a00;
+      }
+      body {
+        background: #fbfaf4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .myDiv {
+        background: #ff9a00;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .myButton {
+        background: #c900ff;
+        color: #fbfaf4;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <title>Screen Object</title>
+  </body>
+
+  <script>
+    // The Screen object in JavaScript provides information about the user's screen or monitor. It represents the screen on which the current window is being rendered and provides properties to access details such as screen width, height, pixel depth, and orientation.
+
+    // Common Properties of the Screen Object:
+    // screen.width: Returns the width of the screen in pixels.
+    // screen.height: Returns the height of the screen in pixels.
+    // screen.availWidth: Returns the width of the screen excluding taskbars and other system UI in pixels.
+    // screen.availHeight: Returns the height of the screen excluding taskbars and other system UI in pixels.
+    // screen.pixelDepth: Returns the color depth of the screen in bits per pixel.
+    // screen.orientation: Returns the orientation (landscape or portrait) of the screen.
+
+    // Accessing properties of the Screen object
+    console.log("Screen Width:", screen.width);
+    console.log("Screen Height:", screen.height);
+    console.log("Available Width:", screen.availWidth);
+    console.log("Available Height:", screen.availHeight);
+    console.log("Pixel Depth:", screen.pixelDepth);
+    console.log("Color Depth:", screen.colorDepth);
+    console.log("Orientation:", screen.orientation.type);
+  </script>
+</html>
