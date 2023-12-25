@@ -12,50 +12,52 @@ Accent: #58D68D (Green)*/
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
 }
+
 body {
   margin: 0;
-  padding: 20px 100px;
 }
-h1 {
+
+#header {
   text-align: center;
+}
+
+#logo {
+  width: 250px;
+  padding: 20px 0;
+}
+
+#menu-bar {
+  text-align: center;
+  background-color: cadetblue;
+}
+
+#menu-bar ul li {
+  display: inline-block;
+  padding: 15px 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#menu-bar ul li:hover {
   text-decoration: underline;
 }
 
-img {
+#container {
+  text-align: center;
+  padding: 50px 100px;
+}
+
+#about-img {
   width: 100%;
-  height: auto;
-  margin: 0 auto;
 }
 
 p {
-  font-size: 18px;
   text-align: justify;
 }
 
-.btn {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  border: solid grey 2px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#white {
-  background-color: white;
-}
-
-#aqua {
-  background-color: aqua;
-}
-
-#violet {
-  background-color: #ce9aff;
-}
-#black {
-  background-color: black;
-}
-
-#color-switcher {
-  text-align: right;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
