@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Spread Operator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Spread Operator</h1>
+  </body>
+
+  <script>
+    // The spread operator (...) in ES6 is used to expand or spread elements, usually an array or an object, into individual elements. It's often used to make copies of arrays/objects, concatenate arrays, or pass elements of an iterable (like an array) as arguments to a function.
+
+    // Using spread operator with arrays
+    const numbers = [1, 2, 3];
+    const moreNumbers = [4, 5, 6];
+
+    const combined = [...numbers, ...moreNumbers]; // Concatenating arrays
+    console.log(combined); // Outputs: [1, 2, 3, 4, 5, 6]
+
+    const copiedNumbers = [...numbers]; // Copying an array
+    console.log(copiedNumbers); // Outputs: [1, 2, 3]
+  </script>
+</html>

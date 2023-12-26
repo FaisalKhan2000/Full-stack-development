@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Default Parameters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Default Parameters</h1>
+  </body>
+
+  <script>
+    // Default parameters in ES6 allow you to assign default values to function parameters if no value or undefined is passed when the function is called.
+
+    // ES6 default parameters
+    function greet(name = "Guest") {
+      console.log(`Hello, ${name}!`);
+    }
+
+    greet(); // Outputs: Hello, Guest!
+    greet("faisal"); // Outputs: Hello, faisal!
+  </script>
+</html>

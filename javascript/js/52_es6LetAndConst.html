@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Let and Const</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Let and Const</h1>
+  </body>
+
+  <script>
+    // ES6 introduced two new ways to declare variables: let and const. These declarations differ from var in their scoping rules and reassignability.
+    // let: Declares a variable that is block-scoped (limited to the block it's declared in, such as a loop or a block of code between curly braces {}) and allows reassignment.
+    // const: Declares a variable that is also block-scoped but cannot be reassigned after declaration. However, for objects and arrays declared with const, their properties or elements can still be changed.
+
+    // var is a window object property
+    // whenever we create any varible with var it becomes the property of window object
+    var num1 = 1;
+    console.log(window.num1); // 1
+
+    let num2 = 2;
+    console.log(window.num2); // undefined
+
+    // Redeclaration is allowed in var
+    var num3 = 3;
+    var num3 = 4;
+    console.log(num3); // 4
+
+    // let num4 = 4;
+    // let num4 = 5; // Identifier 'num4' has already been declared
+    // console.log(num4);
+
+    // var does not respect block scope
+    var x = 10;
+    if (true) {
+      var x = 20;
+      console.log(x); // 20
+    }
+    console.log(x); // 20
+
+    // using let
+    let y = 10;
+    if (true) {
+      let y = 20;
+      console.log(y); // 20
+    }
+    console.log(y); // 10
+
+    // const
+    const PI = 3.14;
+    // PI = 3.14159; // This line would throw an error because you can't reassign a constant variable
+    const obj = { key: "value" };
+    obj.key = "new value"; // This is valid for const objects; you can change their properties
+    console.log(obj.key); // Outputs: 'new value'
+  </script>
+</html>

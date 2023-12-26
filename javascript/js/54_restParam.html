@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Rest Parameters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Rest Parameters</h1>
+  </body>
+
+  <script>
+    // ES6 rest parameters enable a function to accept an indefinite number of arguments as an array, providing flexibility when handling multiple parameters within a function.
+
+    // rest converts the arguments passed to an array
+
+    function restParam(...args) {
+      console.log(args);
+    }
+
+    restParam(); // []
+    restParam(1, 2); // (2) [1, 2]
+    restParam(1, 2, 3); // (3) [1, 2, 3]
+
+    function sum(...args) {
+      let result = 0;
+      for (let i = 0; i < args.length; i++) {
+        result = result + args[i];
+      }
+
+      console.log(result);
+    }
+
+    sum(); // 0
+    sum(1, 2); // 3
+    sum(1, 2, 3); // 6
+  </script>
+</html>

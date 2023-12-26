@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Array Destructuring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Array Destructuring</h1>
+  </body>
+
+  <script>
+    // Array destructuring in JavaScript provides a concise way to extract multiple values from an array and assign them to variables in a single statement. It allows you to unpack values from arrays into distinct variables, mirroring the array's structure.
+
+    // Basic Syntax:
+    // const array = [value1, value2, value3, ...];
+    // const [var1, var2, var3, ...] = array;
+
+    // Matching Positions: Destructuring assigns array elements to variables based on their position in the array. The first variable gets the value of the first element, the second variable gets the value of the second element, and so on.
+    const numbers = [10, 20, 30];
+    const [a, b, c] = numbers;
+
+    console.log(a); // 10
+    console.log(b); // 20
+    console.log(c); // 30
+
+    // Skipping Elements: You can skip elements in the array by using commas without assigning them to a variable.
+    const numbers2 = [100, 200, 300, 400];
+    const [x, , y, z] = numbers2;
+    console.log(x);
+    console.log(y);
+    console.log(z);
+
+    // Rest Pattern: Using the rest (...) syntax, you can collect remaining elements into a new array.
+    const numbers3 = [1, 2, 3, 4, 5];
+    const [first, second, ...rest] = numbers3;
+    console.log(first); // 1
+    console.log(second); // 2
+    console.log(rest); // (3) [3, 4, 5]
+
+    // Default Values: You can set default values in case an array element is undefined.
+    const numbers4 = [10, 20];
+    const [num1 = 5, num2 = 30, num3 = 50, num4] = numbers4;
+    console.log(num1); // 10
+    console.log(num2); // 20
+    console.log(num3); // 50
+    console.log(num4); // undefined
+  </script>
+</html>

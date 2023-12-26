@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | for...of and for...in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | for...of and for...in</h1>
+  </body>
+
+  <script>
+    // for...of: A loop introduced in ES6 that iterates over iterable objects (arrays, strings, maps, sets, etc.), allowing easy access to each item's value without directly dealing with indices or keys.
+
+    // Using for...of with an array
+    const arr = [1, 2, 3];
+    for (const item of arr) {
+      console.log(item); // Outputs each value: 1, 2, 3
+    }
+
+    // for...in: A loop used to iterate over the enumerable properties of an object. It's best suited for iterating over object keys and should not be used to iterate over arrays or other iterable objects due to potential issues with unexpected prototype properties.
+
+    // Using for...in with an object
+    const obj = { a: 1, b: 2, c: 3 };
+    for (const key in obj) {
+      console.log(key); // Outputs each key: a, b, c
+      console.log(obj[key]); // Outputs each corresponding value: 1, 2, 3
+    }
+  </script>
+</html>

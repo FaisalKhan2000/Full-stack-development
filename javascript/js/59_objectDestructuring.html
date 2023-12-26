@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Object Destructuring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://www.color-hex.com/color-palette/3399 -->
+    <!-- #ff9a00	(255,154,0)
+    #000000	(0,0,0)
+    #09ff00	(9,255,0)
+    #c900ff	(201,0,255)
+    #fbfaf4	(251,250,244) -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Object Destructuring</h1>
+  </body>
+
+  <script>
+    // Object destructuring in JavaScript provides a concise way to extract properties from objects and assign them to variables in a single statement. It allows you to unpack values from objects into distinct variables, mirroring the object's structure.
+
+    // Basic Syntax:
+    // const object = { property1: value1, property2: value2, ... };
+    // const { var1, var2, ... } = object;
+
+    // Matching Property Names: Destructuring assigns object properties to variables based on their names. If the variable name matches an object property, the variable receives the value of that property.
+    const person1 = { name: "Alice", age: 30 };
+
+    const { name, age } = person1;
+    console.log(name); // Outputs: 'Alice'
+    console.log(age); // Outputs: 30
+
+    // Assigning to Different Variable Names: You can assign object properties to variables with different names.
+    const person2 = { name: "Bob", age: 25 };
+
+    const { name: fullName, age: years } = person2;
+    console.log(fullName); // Outputs: 'Bob'
+    console.log(years); // Outputs: 25
+
+    // Default Values: Like array destructuring, you can set default values in case an object property is undefined.
+    const person3 = { name3: "Charlie" };
+
+    const { name3, age3 = 30 } = person3;
+    console.log(name3); // Outputs: 'Charlie'
+    console.log(age3); // Outputs: 30 (default value as the property is undefined)
+
+    // Nested Object Destructuring: You can destructure nested objects as well.
+    const student4 = {
+      name4: "Emily",
+      info4: {
+        age4: 21,
+        grade4: "A",
+      },
+    };
+
+    const {
+      name4,
+      info4: { age4, grade4 },
+    } = student4;
+    console.log(name4); // Outputs: 'Emily'
+    console.log(age4); // Outputs: 21
+    console.log(grade4); // Outputs: 'A'
+  </script>
+</html>
