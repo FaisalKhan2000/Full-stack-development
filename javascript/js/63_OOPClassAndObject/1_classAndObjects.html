@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Class And Objects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Class And Objects</h1>
+  </body>
+
+  <script>
+    class person {
+      // In class 3 type of methods can be assigned: 1. constructor 2. normal function 3. static methods
+
+      // constructor function will be automatically called once an object is created
+      constructor(n, a) {
+        console.log("person created");
+        this.name = n;
+        this.age = a;
+      }
+      // functions in class are automatically attached to prototype
+      sayHi() {
+        console.log("Hi...");
+      }
+
+      // static methods cannot be called from objects
+      // They can only be called through Class
+      static hello() {
+        console.log("Hello...");
+      }
+
+      static sproperty = "static property";
+    }
+
+    let person1 = new person("faisal", 23);
+
+    console.log(person1);
+    person1.sayHi();
+    person.hello();
+    console.log(person.sproperty);
+  </script>
+</html>
