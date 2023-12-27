@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype and Prototypal Inheritance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Prototype and Prototypal Inheritance</h1>
+  </body>
+
+  <script>
+    // creating an empty function
+    let person1 = {};
+    console.log(person1);
+    // {}
+    // [[Prototype]]: Object
+    // here prototype is attached
+
+    let person2 = { name: "faisal khan" };
+    console.log(person2);
+    // {name: 'faisal khan'}
+    // [[Prototype]]: Object
+    // same here prototype is also attached
+
+    // Method --> hasOwnProperty()
+    console.log(person2.hasOwnProperty("name")); // true
+    console.log(person2.hasOwnProperty("age")); // false
+
+    // [[Prototype]] conists a number of methods which can be used by us
+
+    // constructor function
+    function Person1(n) {
+      this.name = n;
+    }
+
+    let person3 = new Person1("nasim khan");
+    let person4 = new Person1("riyaz khan");
+    console.log(person3);
+    console.log(person4);
+    // Person {name: 'nasim khan'}
+    // name: "nasim khan"
+    // [[Prototype]]: Object --> Person prototype
+    //     constructor: ƒ Person(n)
+    //     [[Prototype]]: Object --> person3 prototype
+    //         constructor: ƒ Object()
+    //         hasOwnProperty: ƒ hasOwnProperty()
+
+    // when we create an object from a contructor function we can see that there are 2 prototypes and the hasOwnProperty() methods is in the second prototype
+
+    // * prototype chaining
+    // when ever we create an object using contructor function like person1 and person2 the Person protoype gets connected to the person3 (where properties and methods are copied and pasted using constructor functtion e.g. name property) and person4
+    // this prototype is already connected to the Object Prototype with the Pre built method which is already connected to null
+
+    // null <-- Object Prototype with Pre Built Methods
+    //                     |
+    //                     |
+    //              Person Prototype --> person1 and person2 <-- created using constructor function
+
+    console.log(person3.hasOwnProperty("name"));
+    // person3 is created using constructor fn, person3 will first go to Person prototype for the hasOwnProperty() method since it does not have the method it will then go to the Object Prototype with the Pre built methods where hasOwnProperty() is there, if it does not find the hasOwnProperty() there, it will then go to null, if it does not finds hasOwnProperty in null, it will throw an error
+
+    function Person(first, last, a) {
+      this.firstName = first;
+      this.lastName = last;
+      this.age = a;
+
+      this.fullName = function () {
+        console.log(this.firstName + " " + this.lastName);
+      };
+    }
+
+    let person5 = new Person("faisal", "khan", "23");
+    let person6 = new Person("nasim", "khan", "22");
+
+    console.log(person5);
+    console.log(person6);
+
+    // we know that whenever we create an objet using constructor function its properties and methods get copied and pasted in the object (person 5 and person6) which is connected to the Person prototype, which inturn is connected to the Object prototype with pre built methods, which is connected to null
+
+    // here the same method fullName() is pasted to both the person5 and person6
+    // which violates the principle of DRY (Don't Repeat Yourself)
+    // whereas firstName, lastName,age are also pasted but, they have different values so there are not an issue
+  </script>
+</html>

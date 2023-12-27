@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS before ES6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>OOPS before ES6</h1>
+  </body>
+
+  <script>
+    // constructor function
+    function Person(first, last, a) {
+      // Properties
+      this.firstName = first;
+      this.lastName = last;
+      this.age = a;
+
+      //   Methods
+      this.sayHi = function () {
+        console.log("Hi");
+      };
+
+      this.changeAge = function (newAge) {
+        this.age = newAge;
+      };
+    }
+
+    // Crearing Objects
+    let person1 = new Person("faisal", "khan", 23);
+    let person2 = new Person("nasim", "khan", 22);
+    let person3 = new Person("riyaz", "khan", 24);
+    let person4 = new Person("afzal", "khan", 23);
+    person4.changeAge(24);
+    console.log(person4.age); // 24
+
+    console.log(person1);
+    console.log(person2);
+    console.log(person3);
+    console.log(person4);
+  </script>
+</html>

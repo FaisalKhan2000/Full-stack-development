@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype and Prototypal Inheritance 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Prototype and Prototypal Inheritance 3</h1>
+  </body>
+
+  <script>
+    // Prototypal Inheritance
+
+    // Creature Constructor
+    function Creature(ls) {
+      this.lifeSpan = ls;
+      breed: "male";
+    }
+    Creature.prototype.breath = function () {
+      console.log("breathing...");
+    };
+    let creature1 = new Creature(100);
+    console.log(creature1);
+
+    // Person Constructor
+    function Person(first, last, a) {
+      this.firstName = first;
+      this.lastName = last;
+      this.age = a;
+    }
+    Person.prototype.fullName = function () {
+      console.log(this.firstName + " " + this.lastName);
+    };
+
+    // we want to access the method of Creature constructor from the Person constructor
+    // we have to break the linkage between Person prototype <--> Object Prototype with pre built methods (see prototypal_inheritance.png image)
+    // and we have to create a linkage between Person prototype <--> Creature prototype (see prototypal_inheritance2.png image)
+
+    // Person.prototype.__proto__ = Object.create(Creature.prototype);
+    Person.prototype.__proto__ = Creature.prototype;
+
+    // .__proto__ is used to create prototyal inhertance
+
+    // fullName() will be under Person Prototype
+    let person1 = new Person("faisal", "khan", "23");
+    console.log(person1);
+    person1.breath();
+    person1.fullName();
+  </script>
+</html>
