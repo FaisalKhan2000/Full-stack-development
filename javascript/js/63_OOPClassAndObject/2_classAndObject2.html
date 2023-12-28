@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Class And Objects 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Class And Objects 2</h1>
+  </body>
+
+  <script>
+    // Inheritance in class
+    class employee {
+      constructor(n) {
+        this.name = n;
+      }
+      msg() {
+        console.log("Hi...");
+      }
+    }
+
+    class manager extends employee {
+      constructor(n, d) {
+        super(n); // super() will inherit properties from parent class
+        this.department = d;
+      }
+
+      info() {
+        super.msg(); // super. will inherit any method from parent class
+        console.log(
+          `${this.name} is a manager of department ${this.department}`
+        );
+      }
+    }
+
+    let manager1 = new manager("faisal", "web dev");
+    console.log(manager1);
+    // console.log(manager1.msg());
+    manager1.info();
+
+    class admin extends manager {}
+
+    let admin1 = new admin("nasim", "IT");
+    console.log(admin1);
+    admin1.msg();
+  </script>
+</html>

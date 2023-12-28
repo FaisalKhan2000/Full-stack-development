@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Map Function</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Map Function</h1>
+  </body>
+
+  <script>
+    // The map() function in JavaScript is an array method used to iterate over an array's elements and create a new array based on the results of a callback function applied to each element. It does not change the original array but returns a new array with the modified elements.
+
+    // Syntax:
+
+    // const newArray = array.map((currentValue, index, array) => {
+    // // Return element for newArray
+    // });
+    // currentValue: The current element being processed in the array.
+    // index (optional): The index of the current element being processed.
+    // array (optional): The array map() was called upon.
+
+    // 1. Doubling Array Elements:
+    const numbers = [1, 2, 3, 4, 5];
+    const doubled = numbers.map((num) => num * 2);
+    console.log(doubled); // Output: [2, 4, 6, 8, 10]
+
+    // 2. Generating a New Array from an Existing One:
+    const names = ["faisal", "nasim", "riyaz", "afzal"];
+    const modifiedNames = names.map((names) => `Hello, ${names}`);
+    console.log(modifiedNames); // Output: ['Hello, Alice', 'Hello, Bob', 'Hello, Charlie']
+
+    // 3. Using Index and Array Parameters:
+    const numbers2 = [1, 2, 3, 4, 5];
+    const indexBasedArray = numbers2.map((num, index) => num + index);
+    console.log(indexBasedArray); // Output: [1, 3, 5, 7, 9]
+
+    // 4. using all 3 parameters of map function (currentValue, index, array)
+    const numbers3 = [1, 2, 3, 4, 5];
+    const mappedArray = numbers3.map((currentValue, index, array) => {
+      console.log(`Current Value: ${currentValue}`);
+      console.log(`Index: ${index}`);
+      console.log(`Array: ${array}`);
+
+      // Return the modified element for the new array
+      return currentValue * index;
+    });
+
+    console.log(mappedArray);
+    // Current Value: 1
+    // Index: 0
+    // Array: [1,2,3,4,5]
+    // Current Value: 2
+    // Index: 1
+    // Array: [1,2,3,4,5]
+    // Current Value: 3
+    // Index: 2
+    // Array: [1,2,3,4,5]
+    // Current Value: 4
+    // Index: 3
+    // Array: [1,2,3,4,5]
+    // Current Value: 5
+    // Index: 4
+    // Array: [1,2,3,4,5]
+    // [0, 2, 6, 12, 20]
+  </script>
+</html>

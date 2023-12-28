@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Arrow Functions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Arrow Functions</h1>
+  </body>
+
+  <script>
+    // Arrow functions are a concise way to write functions in JavaScript, introduced in ES6. They have a more compact syntax compared to traditional function expressions and offer a few differences in behavior.
+
+    // // Syntax:
+
+    // // Basic arrow function syntax
+    // let arrowFunction = (param1, param2) => {
+    // // Function body
+    // return param1 + param2;
+    // };
+
+    // 1. Arrow Function with Parameters:
+    let add = (a, b) => {
+      return a + b;
+    };
+    console.log(add(2, 3)); // 5
+
+    // 2. Implicit Return:
+    // Arrow functions have an implicit return when written on a single line without curly braces. If there's no explicit return, the expression is automatically returned.
+
+    let multiply = (a, b) => a * b;
+    console.log(multiply(2, 3)); // 6
+
+    let square = (num) => num * num;
+    console.log(square(2)); // 4
+
+    let random = () => Math.random();
+    console.log(random());
+  </script>
+</html>

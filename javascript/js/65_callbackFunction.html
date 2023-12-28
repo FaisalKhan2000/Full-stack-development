@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 | Callback Functions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000000;
+        color: #ff9a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ES6 | Callback Functions</h1>
+  </body>
+
+  <script>
+    // Callback function
+
+    // Example 1: simple callback function
+    let sayHi = () => console.log("Hi...");
+    let sayBye = () => console.log("bye...");
+
+    // sum function with  a callback function as a third parameter
+    let sum = (num1, num2, callback) => {
+      console.log(num1 + num2);
+      callback();
+    };
+
+    sum(2, 3, sayHi);
+    sum(5, 2, sayBye);
+
+    //  Example 2: More complex --> passing an anynomous function
+
+    let processedArray = (arr, callback) => {
+      let result = [];
+      for (let i = 0; i < arr.length; i++) {
+        result.push(callback(arr[i]));
+      }
+
+      return result;
+    };
+
+    let squared = processedArray([1, 2, 3, 4, 5], (num) => num * num);
+    console.log(squared);
+  </script>
+</html>

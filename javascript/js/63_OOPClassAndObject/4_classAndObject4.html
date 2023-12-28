@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ES6 | Class And Objects 2</title>
+    <title>ES6 | Class And Objects 4</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,37 +36,32 @@
   </head>
 
   <body>
-    <h1>ES6 | Class And Objects 2</h1>
+    <h1>ES6 | Class And Objects 4</h1>
   </body>
 
   <script>
-    // Inheritance in class
-    class employee {
-      constructor(n) {
-        this.name = n;
-      }
+    // Mixin in class
+    let usefullMethods = {
+      sayHi() {
+        console.log("Hi...");
+      },
+      sayBye() {
+        console.log("bye...");
+      },
+    };
 
-      msg() {
-        console.log("hi...");
-      }
-    }
-
-    class manager extends employee {
-      constructor(n, d) {
-        super(n);
-        this.department = d;
-      }
-
-      info() {
-        console.log(
-          this.name + "  is manager of department " + this.department
-        );
+    class user {
+      constructor() {
+        this.name = "faisal";
       }
     }
 
-    let manager1 = new manager("faisal", "web dev");
-    console.log(manager1);
-    manager1.msg();
-    manager1.info();
+    // Mixin
+    Object.assign(user.prototype, usefullMethods);
+
+    let user1 = new user();
+
+    console.log(user1);
+    user1.sayHi();
   </script>
 </html>
