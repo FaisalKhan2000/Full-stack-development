@@ -18,3 +18,4 @@ console.log(z);
 // Reassignment is not allowed in const
 z = 101;
 console.log(z); // Error .
+console.log(z); // Error .
