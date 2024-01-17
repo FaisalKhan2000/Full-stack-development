@@ -45,7 +45,7 @@ The project is organized into several components:
 
 5. **Output.js:**
 
-   - Component that displays the calculated tip amount and total amount per person.
+   - Component that displays the calculated tip amount per person and total amount.
 
 6. **Button.js:**
    - Component for the Calculate Tip button.
