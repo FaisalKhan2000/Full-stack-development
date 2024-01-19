@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Monoton:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #80c0eb;
+}
+
+.container {
+  width: 400px;
+  background: #282851;
+  padding: 1rem;
+  /* margin: 5rem auto; */
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: "Monoton";
+  color: rgb(161, 160, 160);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  padding: 2.4rem 0;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px 1rem;
+  background: #3e3e5a;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputField input {
+  background: transparent;
+  padding: 10px;
+  color: rgb(161, 160, 160);
+  font-size: 1rem;
+}
+.inputField input::placeholder {
+  color: rgb(161, 160, 160);
+}
+
+.add-icon {
+  background: #3d79b1;
+  color: #fff;
+  font-size: 2rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.add-icon:hover {
+  transform: rotate(90deg);
+}
+
+.toDoList {
+  margin-top: 2rem;
+}
+
+.toDoList span {
+  color: rgb(161, 160, 160);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.list-items {
+  background: #44446b;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* color: rgb(186, 186, 186); */
+  color: rgb(161, 160, 160);
+  margin: 1rem;
+}
+
+input[type="checkbox"] {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 22px !important;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: block;
+}
+
+.delete-icon:hover {
+  background: #3d79b1;
+  transition: 0.3s;
+}
+
+.isChecked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.stats {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: #282851;
+  /* background: #44446b; */
+
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(186, 186, 186);
+  /* margin: 1rem; */
+}
+
+.sorting {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  margin: 10px;
+}
+.sorting-button {
+  background: #3d79b1;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 10px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.active {
+  color: #3d79b1;
+  background: #fff;
+}
+
+.sorting button:hover {
+  text-decoration: underline;
+}
