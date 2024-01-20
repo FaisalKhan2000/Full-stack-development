@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,400;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px dotted red; */
+}
+
+body {
+  background: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+  padding-top: 150px;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  width: 700px;
+  height: 60%;
+  border-radius: 25px 25px 100px 25px;
+  padding: 35px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: italic;
+  text-align: center;
+  color: hsl(259, 100%, 65%);
+  /* letter-spacing: 0.1rem; */
+
+  font-family: "Monoton";
+  text-transform: uppercase;
+}
+
+input[type="date"] {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background: hsl(259, 100%, 65%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  /* font-family: "Monoton"; */
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.output {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.output span {
+  padding-right: 10px;
+  color: hsl(259, 100%, 65%);
+  font-style: normal;
+  font-family: "Monoton";
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    height: 90%;
+    width: 95%;
+  }
+}
