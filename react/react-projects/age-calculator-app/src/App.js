@@ -1,6 +1,6 @@
 import "./App.css";
 import Input from "./Input";
-import Button from "./Button";
+
 import Output from "./Output";
 import { useState } from "react";
 
@@ -25,7 +25,6 @@ function App() {
     <div className="container">
       {/* Pass the input state and setInput function as props to the Input component */}
       <Input input={input} onInput={setInput} />
-      <Button />
       <Output years={years} months={months} days={days} />
     </div>
   );
