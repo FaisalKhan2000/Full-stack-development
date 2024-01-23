@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --bg-dark: rgb(21, 28, 47);
+  --bg-dark-2: rgb(29, 43, 73);
+  --bg-dark3: rgb(21, 28, 47);
+  --color: rgb(3, 120, 254);
+  --color2: rgb(255, 255, 255);
+  --color3: rgb(143, 149, 163);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  /* border: 1px dotted pink; */
+}
+
+body {
+  background: var(--bg-dark);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  max-width: 600px;
+}
+
+.navbar {
+  color: var(--color2);
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.toggle-btn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100%;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--bg-dark-2);
+  height: 50px;
+  padding: 0 15px;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.search-btn {
+  background: var(--color);
+  height: 75%;
+  border-radius: 7px;
+  color: var(--color2);
+  font-weight: 700;
+  padding: 0 22px;
+  cursor: pointer;
+  border: none;
+}
+
+.search-btn:hover {
+  background: var(--color2);
+  color: var(--color);
+}
+
+.search-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  background: var(--bg-dark-2);
+  width: 250px;
+  height: 100%;
+  color: var(--color2);
+  padding: 0 10px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border: none;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+/* Main container */
+.main-container {
+  background: var(--bg-dark-2);
+  margin-top: 20px;
+  border-radius: 7px;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-content {
+  width: 30%;
+}
+
+.image-content img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.main-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name-content {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color2);
+}
+
+.user-id {
+  color: var(--color);
+  font-size: 0.8rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.joined {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.bio {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color2);
+}
+
+.followers-div {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 60px;
+  background: var(--bg-dark);
+  padding: 10px 20px;
+  border-radius: 7px;
+  color: var(--color2);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.num-data {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color3);
+}
+
+.links p {
+  font-size: 0.7rem;
+}
+
+.links-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+/* dark mode */
+
+@media (max-width: 700px) {
+  /* Your styles for screens with a width of 600 pixels or less go here */
+
+  .container {
+    width: 400px;
+  }
+
+  .navbar {
+    width: 400px;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
