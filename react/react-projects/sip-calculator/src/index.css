@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --black: #080705;
+  --charcoal: #40434e;
+  --wine: #702632;
+  --cordovan: #912f40;
+  --baby-powder: #fffffa;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  /* border: 1px dotted salmon; */
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #edeced;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  background-image: linear-gradient(#d56d7e, #8e4450 50%, #702632);
+  /* background-color: #702632; Example background color */
+  color: white; /* Example text color */
+  padding: 15px;
+}
+
+.navbar-contents {
+  max-width: 768px; /* Set max width for the content inside .navbar */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.logo {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+/* Hide the number input spinner buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.main-container {
+  background-color: #fffffa;
+  max-width: 768px;
+  width: 90%;
+  margin: 25px auto;
+  min-height: 100vh;
+  padding: 25px 10px;
+}
+
+/* Header */
+.header h1 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 40px;
+  color: rgb(45, 44, 44);
+}
+
+.header p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(103, 103, 102);
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+.input-content h3 {
+  font-size: 0.9rem;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(103, 103, 102);
+}
+
+.input-content {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  height: 35px;
+  padding-left: 10px;
+  width: 97.5%;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 20px;
+  color: #676766;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 0;
+  background-image: linear-gradient(#d56d7e, #8e4450 50%, #702632);
+  border-radius: 2px;
+  border: none;
+  color: #fffffa;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#c05c6d, #74353f 50%, #702632);
+}
+
+/* Optional: Add some basic styling to the table for better appearance */
+.panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+.panel th,
+.panel td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  border-right: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+}
+
+.panel th {
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: #333333;
+}
+
+td {
+  border-left: none;
+}
+
+/* PanelChart.css */
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.row1 {
+  background-color: #ddd;
+  color: #080;
+  margin-top: 10px;
+}
+
+.row3 {
+  background-color: #ddd;
+}
+
+/* PanelChart.css */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  border-right: none;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: #666666;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: #333333;
+}
+
+.table td {
+  border-left: none;
+}
+
+.row1 {
+  background-color: #f2f2f2;
+}
+
+.row3 {
+  background-color: #f2f2f2;
+}

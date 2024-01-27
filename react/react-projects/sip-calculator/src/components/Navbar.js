@@ -1,6 +1,8 @@
+import React from "react";
+
 export default function Navbar({ children, className, onClick }) {
   return (
-    <nav onClick={onClick} className={className}>
+    <nav className={className} onClick={onClick}>
       {children}
     </nav>
   );
