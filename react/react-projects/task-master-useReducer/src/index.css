@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Monoton", sans-serif;
+  font-size: 2.2rem;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+li button {
+  margin-left: 5px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+li input[type="text"] {
+  width: 70%;
+  margin-right: 5px;
+}
+
+li button:nth-child(2) {
+  background-color: #2196f3;
+}
+
+li button:nth-child(2):hover {
+  background-color: #1e87db;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.filter-buttons {
+  margin-top: 10px;
+}
+
+.filter-buttons button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-buttons button:hover {
+  background-color: #45a049;
+}
+
+.filter-buttons button.active {
+  background-color: #1e87db;
+  color: #fff;
+}
