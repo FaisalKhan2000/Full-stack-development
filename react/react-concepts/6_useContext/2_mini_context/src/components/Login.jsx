@@ -1,10 +1,13 @@
 import { useContext, useState } from "react";
 import UserContext from "../context/UserContext";
+// import { useUser } from "../context/UserContextProvider";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
   const { setUser } = useContext(UserContext);
+  // const { setUser } = useUser();
 
   const handleSubmit = (e) => {
     e.preventDefault();
