@@ -1,0 +1,15 @@
+1. npm installs :
+npm install redux
+npm install react-redux
+npm install redux-thunk
+
+2. redux devtools
+- install redux devtools chrome extension
+- npm i @redux-devtools/extension
+ - wrapping : 
+      Creating redux store
+      const store = createStore(
+        rootReducer,
+        composeWithDevTools(applyMiddleware(thunk))
+      );
+
