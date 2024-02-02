@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+.counter-container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.count-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.increment-btn,
+.decrement-btn {
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add more styles as needed */

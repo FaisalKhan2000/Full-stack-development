@@ -13,3 +13,7 @@ npm install redux-thunk
         composeWithDevTools(applyMiddleware(thunk))
       );
 
+
+3. redux toolkit
+
+npm i @reduxjs/toolkit
