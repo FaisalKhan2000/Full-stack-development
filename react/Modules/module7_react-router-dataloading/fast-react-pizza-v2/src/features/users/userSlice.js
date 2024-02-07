@@ -23,7 +23,7 @@ function getPosition() {
 //   return { position, address };
 // }
 
-// creating thunk
+//* creating thunk
 
 export const fetchAddress = createAsyncThunk(
   "user/fetchAddress",
