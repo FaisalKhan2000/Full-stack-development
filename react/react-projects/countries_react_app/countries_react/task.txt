@@ -1,0 +1,18 @@
+- feb 7 :
+1. created components Search, Error, Loader, AppLayout
+2. added react router in the app components
+3. styled the components using tailwind
+4. created the api
+
+- todo:
+1. display all the data in the home page
+2. add a search functionality in the search bar which displayes content based on search. (https://github.com/Eazy2Code/Search-Filter-React/blob/master/src/App.js)
+3. add a filter by region which displays content based on regions which are africa, america, asia, europe, oceania
+
+
+-----------------------
+1. display individul pages on click using react router
+
+
+------------------------
+1. add dark and light mode
