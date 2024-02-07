@@ -8,6 +8,7 @@ function AppLayout() {
   return (
     <div className="grid h-screen grid-rows-[auto_1fr] ">
       {isLoading && <Loader />}
+
       <Header />
       <div className="">
         <main className="mx-auto max-w-5xl px-4 py-4 sm:px-0">

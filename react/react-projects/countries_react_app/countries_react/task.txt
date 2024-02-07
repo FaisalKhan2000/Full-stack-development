@@ -16,3 +16,6 @@
 
 ------------------------
 1. add dark and light mode
+
+-------
+1. fix loader
