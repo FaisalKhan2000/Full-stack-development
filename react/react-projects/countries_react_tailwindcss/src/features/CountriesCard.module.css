@@ -1,0 +1,28 @@
+.container {
+  background-color: var(--dark-blue);
+  width: 250px;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.imageContainer img {
+  width: 250px;
+  height: 150px;
+}
+.dataContainer {
+  color: var(--very-light-gray);
+  padding: 0 2rem;
+}
+
+.dataContainer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.smallFont {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}

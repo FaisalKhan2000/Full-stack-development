@@ -1,0 +1,14 @@
+.header {
+  background-color: var(--dark-blue);
+  color: var(--very-light-gray);
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1.3rem 02rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header div {
+  cursor: pointer;
+}
