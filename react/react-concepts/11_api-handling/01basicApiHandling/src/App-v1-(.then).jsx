@@ -12,89 +12,76 @@ function App() {
 
   // GET posts
   useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await fetch(
-          "https://jsonplaceholder.typicode.com/posts"
-        );
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => {
         if (!response.ok) {
           throw new Error("Request Failed");
         }
-        const data = await response.json();
-        setPosts(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchPosts();
+        return response.json();
+      })
+      .then((data) => setPosts(data))
+      .catch((error) => console.error(error));
   }, []);
 
   // POST a new post
-  const handleCreatePost = async () => {
-    try {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts",
-        {
-          method: "POST",
-          body: JSON.stringify(newPost),
-          headers: {
-            "Content-Type": "application/json",
-          },
+  const handleCreatePost = () => {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: JSON.stringify(newPost),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Request Failed");
         }
-      );
-      if (!response.ok) {
-        throw new Error("Request Failed");
-      }
-      const data = await response.json();
-      if (!newPost.title || !newPost.body) return;
-      setPosts([...posts, data]);
-      setNewPost({ title: "", body: "" });
-    } catch (error) {
-      console.error(error);
-    }
+        return response.json();
+      })
+      .then((data) => {
+        if (!newPost.title || !newPost.body) return;
+        setPosts([...posts, data]);
+        setNewPost({ title: "", body: "" });
+      })
+      .catch((error) => console.error(error));
   };
 
   // PUT (Update) a post
-  const handleUpdatePost = async () => {
-    try {
-      const response = await fetch(
-        `https://jsonplaceholder.typicode.com/posts/${updatedPost.id}`,
-        {
-          method: "PUT",
-          body: JSON.stringify(updatedPost),
-          headers: {
-            "Content-Type": "application/json",
-          },
+  const handleUpdatePost = () => {
+    fetch(`https://jsonplaceholder.typicode.com/posts/${updatedPost.id}`, {
+      method: "PUT",
+      body: JSON.stringify(updatedPost),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Request Failed");
         }
-      );
-      if (!response.ok) {
-        throw new Error("Request Failed");
-      }
-      const data = await response.json();
-      setPosts(posts.map((post) => (post.id === data.id ? data : post)));
-      setUpdatedPost({ id: null, title: "", body: "" });
-    } catch (error) {
-      console.error(error);
-    }
+        return response.json();
+      })
+      .then((data) => {
+        setPosts(posts.map((post) => (post.id === data.id ? data : post)));
+        setUpdatedPost({ id: null, title: "", body: "" });
+      })
+      .catch((error) => console.error(error));
   };
 
   // DELETE a post
-  const handleDeletePost = async (id) => {
-    try {
-      const response = await fetch(
-        `https://jsonplaceholder.typicode.com/posts/${id}`,
-        {
-          method: "DELETE",
+  const handleDeletePost = (id) => {
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Request Failed");
         }
-      );
-      if (!response.ok) {
-        throw new Error("Request Failed");
-      }
-      setPosts(posts.filter((post) => post.id !== id));
-    } catch (error) {
-      console.error(error);
-    }
+      })
+      .then(() => {
+        setPosts(posts.filter((post) => post.id !== id));
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
