@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  background: #f4f4f4;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.btn-group button {
+  margin-right: 10px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.form-container input {
+  margin-bottom: 10px;
+}
+
+.form-container button {
+  margin-right: 10px;
+}
+button {
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+input {
+  padding: 1rem;
+  margin: 0 1rem;
+}
