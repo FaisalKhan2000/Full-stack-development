@@ -28,6 +28,7 @@ function App() {
     })
       .then((response) => response.json())
       .then((data) => {
+        if (!newPost.title || !newPost.body) return;
         setPosts([...posts, data]);
         setNewPost({ title: "", body: "" });
       });
