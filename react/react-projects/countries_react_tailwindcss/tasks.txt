@@ -1,0 +1,5 @@
+1. implement individual country page
+2. make it responsive
+3. implement error page
+4. add loader
+5. add dark mode and light mode

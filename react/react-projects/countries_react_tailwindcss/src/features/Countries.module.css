@@ -7,13 +7,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .searchInput {
   background: var(--dark-blue);
   display: flex;
   align-items: center;
-  width: 29rem;
+  width: auto;
   height: 4rem;
   gap: 1rem;
   padding: 0 1rem;
@@ -33,4 +34,20 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown select {
+  padding: 1rem 2rem;
+  background: var(--dark-blue);
+  border: none;
+  color: var(--very-light-gray);
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    display: flex;
+    justify-content: space-around;
+  }
 }
