@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  height: 80vh;
+  gap: 50px;
+
+  /* align-items: center; */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.imageContainer img {
+  width: 250px;
+  height: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--very-light-gray);
+}
+
+.contentContainer {
+  display: flex;
+  height: 80%;
+  gap: 10px;
+}
+
+p {
+  font-size: 1.4rem;
+}

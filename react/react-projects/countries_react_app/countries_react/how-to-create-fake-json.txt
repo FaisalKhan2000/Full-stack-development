@@ -1,9 +1,0 @@
-npm i json-server
-
-add script in package.json
-"scripts" : {
-  ...,
-  "server": "json-server --watch src/services/data.json --port 8000"
-}
-
-npm run server
