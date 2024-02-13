@@ -1,0 +1,9 @@
+1. There are still many doubts in post form component.
+2. reveise how con Tiny MCE is controlled with form
+3. go through post form again
+
+after understanding this concepts go through
+1. parsing html in react components
+2. remaning lec
+
+https://www.youtube.com/watch?v=e7llTS5U0dM&list=PLRAV69dS1uWQos1M1xP6LWN6C-lZvpkmq&index=25
