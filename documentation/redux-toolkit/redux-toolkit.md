@@ -159,8 +159,7 @@ const productSlice = createSlice({
   },
 });
 
-// Export action creators and reducer from the product slice
-export const { setProducts, setStatus } = productSlice.actions;
+
 export default productSlice.reducer;
 
 // Thunks
