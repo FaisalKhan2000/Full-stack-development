@@ -7,7 +7,6 @@ import { format } from "date-fns";
 
 export default function Content({ content }) {
   if (!content) {
-    // If content is not available yet, you can render a loading state or return null
     return <p>Loading...</p>;
   }
 
