@@ -6,4 +6,9 @@
 6. function as a parameter in node
 7. what is http module
 8. what is package file?
-9.
+9. is nodejs single thread or multi thread? answer: single
+10. why is nodejs faster?
+11. what is nodemon?
+12. Nodejs is sync or async language? answer: async
+13. explain about diffrent http requests?
+
