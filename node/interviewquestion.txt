@@ -1,0 +1,9 @@
+1. is the console.log() we used in js and node are same or different?
+2. how do you import or export modules in node?
+3. what is filter ?
+4. what are modules
+5. difference between global and non-global modules
+6. function as a parameter in node
+7. what is http module
+8. what is package file?
+9.
