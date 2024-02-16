@@ -11,4 +11,7 @@
 11. what is nodemon?
 12. Nodejs is sync or async language? answer: async
 13. explain about diffrent http requests?
+14. can i access other file like c drive or d drive through .readdir
+15. what is a buffer in fs.readFile() when we didn't gave second param as utf-8
+16. Explain architecture of node.js (explain about how node works behind the scene)
 

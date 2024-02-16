@@ -1,16 +1,17 @@
-
 ## ⭐ Make Html Pages
 
 <p align="center">
-                <img style={{ position: "relative" ,opacity: 1 ,borderRadius: "10px" ,overflow: "hidden" , marginTop:"20px" , marginBottom: "20px"}}
+                  <img style={{ position: "relative" ,opacity: 1 ,borderRadius: "10px" ,overflow: "hidden" , marginTop:"20px" , marginBottom: "20px"}}
                 src="https://media.giphy.com/media/ylyUQmwRhTyxiD5CFO/giphy.gif"
                />
             </p>
 
 ### ❗ HTML Setup
+
 1. First Make a Folder name "public" in your project folder.
 2. Inside the public folder make a file name "about.html" and write some html code.
-> You can write very basic html code or you can just simply copy the code from the below.
+   > You can write very basic html code or you can just simply copy the code from the below.
+
 ```js
     <!DOCTYPE html>
     <html>
@@ -199,6 +200,7 @@ footer p {
   }
 }
 ```
+
 > It's not necessary to make a css file. You can write css code in the html file itself or you can simply skip this step.
 
 ### ❗ Node.js Setup
@@ -206,45 +208,48 @@ footer p {
 1. First inside open your `index.js` file and write the following code.
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
 
 app.listen(5000);
 ```
+
 > This will call the express module and create a server on port 5000.
 
-2. Now we want the path of the project folder so we will use __dirname. So write the following code.
+2. Now we want the path of the project folder so we will use \_\_dirname. So write the following code.
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
 // import path module
-const path = require('path');
+const path = require("path");
 
 // set the path of the project folder
 //join the path of the project folder with the public folder
-const publicPath = path.join(__dirname, 'public');
+const publicPath = path.join(__dirname, "public");
 
 app.listen(5000);
 ```
-> __dirname is a global variable that gives the path of the project folder.
+
+> \_\_dirname is a global variable that gives the path of the project folder.
 > Join method joins the path of the project folder with the public folder.
 > If you want you can check the path by console logging it `console.log(publicPath);`
 
 3. Now we will use the express static middleware to serve the static files. So write the following code.
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
+const path = require("path");
 
-const publicPath = path.join(__dirname, 'public');
+const publicPath = path.join(__dirname, "public");
 
 // use the express static middleware to serve the static files
 app.use(express.static(publicPath));
 
 app.listen(5000);
 ```
+
 > Here use method is used to use the express static middleware means if you have any static files like html, css, js, images, etc. then you can use this middleware to serve the static files to the browser.
 > Use method takes the path of the public folder as an argument It is the function of the express module.
 > this app is coming from the express module because we have called the express module in the first line and stored it in the app variable.
@@ -254,8 +259,3 @@ app.listen(5000);
 ![image](https://user-images.githubusercontent.com/97989643/230273348-9421e54b-9921-4f74-98b6-b4145c4947a9.png)
 
 > If you want to add more pages then you can simply add more html files in the public folder and you can access them by typing `http://localhost:5000/nameofthefile.html`
-
-
-
-
-
