@@ -14,4 +14,7 @@
 14. can i access other file like c drive or d drive through .readdir
 15. what is a buffer in fs.readFile() when we didn't gave second param as utf-8
 16. Explain architecture of node.js (explain about how node works behind the scene)
+17. what is middle ware?
+18. types of middleware?
+19. difference between app level and route level middle ware?
 
