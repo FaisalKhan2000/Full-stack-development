@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require("fs");
-const { error } = require("console");
 
 // // Make a directory
 // fs.mkdir(path.join(__dirname, "/test"), (error) => {
