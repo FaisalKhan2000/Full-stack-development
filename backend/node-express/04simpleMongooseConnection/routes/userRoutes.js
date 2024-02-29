@@ -8,7 +8,7 @@ const User = require("../models/User");
 router.get("/create-user", async (req, res) => {
   try {
     const newUser = new User({
-      username: "example_user",
+      username: "example_user2",
       email: "example@example.com",
       password: "password123",
     });
