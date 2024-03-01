@@ -15,15 +15,20 @@ const getAllProducts = async (req, res) => {
   const { featured, company, name, sort, fields, numericFilters } = req.query;
   const queryObject = {};
 
+  // filter
   if (featured) {
     queryObject.featured = featured === "true" ? true : false;
   }
   if (company) {
     queryObject.company = company;
   }
+
+  // search
   if (name) {
     queryObject.name = { $regex: name, $options: "i" };
   }
+
+  // numeric filters
 
   if (numericFilters) {
     const operatorMap = {
@@ -56,10 +61,13 @@ const getAllProducts = async (req, res) => {
     result = result.sort("createdAt");
   }
 
+  // fields
   if (fields) {
     const fieldsList = fields.split(",").join(" ");
     result = result.select(fieldsList);
   }
+
+  // pagination
   const page = Number(req.query.page);
   const limit = Number(req.query.limit);
   const skip = (page - 1) * limit;
