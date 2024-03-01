@@ -1,0 +1,598 @@
+[
+  {
+    "name": "Vintage Armchair",
+    "price": 75,
+    "company": "marcos",
+    "rating": 4.3
+  },
+  {
+    "name": "Rustic Coffee Table",
+    "price": 210,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Contemporary Sofa",
+    "price": 420,
+    "company": "caressa",
+    "rating": 4.7
+  },
+  {
+    "name": "Modern Desk",
+    "price": 180,
+    "company": "ikea",
+    "rating": 4.5
+  },
+  {
+    "name": "Elegant Dining Table",
+    "price": 150,
+    "company": "marcos",
+    "rating": 4.6
+  },
+  {
+    "name": "Leather Recliner",
+    "price": 320,
+    "company": "liddy",
+    "rating": 4.9
+  },
+  {
+    "name": "Industrial Bookshelf",
+    "price": 120,
+    "company": "caressa",
+    "rating": 4.4
+  },
+  {
+    "name": "Cozy Bed",
+    "price": 280,
+    "company": "ikea",
+    "rating": 4.7
+  },
+  {
+    "name": "Minimalist TV Stand",
+    "price": 90,
+    "company": "marcos",
+    "rating": 4.2
+  },
+  {
+    "name": "Velvet Ottoman",
+    "price": 200,
+    "company": "liddy",
+    "rating": 4.5
+  },
+  {
+    "name": "Antique Cabinet",
+    "price": 380,
+    "company": "caressa",
+    "rating": 4.8
+  },
+  {
+    "name": "Scandinavian Chair",
+    "price": 140,
+    "company": "ikea",
+    "rating": 4.6
+  },
+  {
+    "name": "Glamorous Vanity",
+    "price": 250,
+    "company": "marcos",
+    "rating": 4.3
+  },
+  {
+    "name": "Classic Side Table",
+    "price": 110,
+    "company": "liddy",
+    "rating": 4.4
+  },
+  {
+    "name": "Mid-Century Sofa",
+    "price": 370,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Floating Shelf",
+    "price": 60,
+    "company": "ikea",
+    "rating": 4.2
+  },
+  {
+    "name": "Chic Loveseat",
+    "price": 310,
+    "company": "marcos",
+    "rating": 4.7
+  },
+  {
+    "name": "Farmhouse Bench",
+    "price": 170,
+    "company": "liddy",
+    "rating": 4.5
+  },
+  {
+    "name": "Sleek Office Chair",
+    "price": 150,
+    "company": "caressa",
+    "rating": 4.6
+  },
+  {
+    "name": "Bohemian Pouf",
+    "price": 80,
+    "company": "ikea",
+    "rating": 4.3
+  },
+  {
+    "name": "Versatile Desk Lamp",
+    "price": 40,
+    "company": "marcos"
+  },
+  {
+    "name": "Ergonomic Recliner",
+    "price": 350,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Futuristic Bookcase",
+    "price": 190,
+    "company": "caressa",
+    "rating": 4.4
+  },
+  {
+    "name": "Space-Saving Table",
+    "price": 120,
+    "company": "ikea",
+    "rating": 4.7
+  },
+  {
+    "name": "Plush Accent Chair",
+    "price": 230,
+    "company": "marcos",
+    "rating": 4.2
+  },
+  {
+    "name": "Vintage Bar Cart",
+    "price": 260,
+    "company": "liddy",
+    "rating": 4.5
+  },
+  {
+    "name": "Contemporary Bed Frame",
+    "price": 420,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Industrial Desk",
+    "price": 170,
+    "company": "ikea",
+    "rating": 4.6
+  },
+  {
+    "name": "Bohemian Rug",
+    "price": 150,
+    "company": "marcos",
+    "rating": 4.3
+  },
+  {
+    "name": "Elegant Vanity",
+    "price": 340,
+    "company": "liddy",
+    "rating": 4.7
+  },
+  {
+    "name": "Retro Armchair",
+    "price": 280,
+    "company": "caressa",
+    "rating": 4.8
+  },
+  {
+    "name": "Scandinavian Dining Table",
+    "price": 190,
+    "company": "ikea",
+    "rating": 4.4
+  },
+  {
+    "name": "Minimalist Sofa",
+    "price": 380,
+    "company": "marcos",
+    "rating": 4.6
+  },
+  {
+    "name": "Glamorous Chandelier",
+    "price": 220,
+    "company": "liddy"
+  },
+  {
+    "name": "Mid-Century Cabinet",
+    "price": 350,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Cozy Bedside Table",
+    "price": 140,
+    "company": "ikea",
+    "rating": 4.7
+  },
+  {
+    "name": "Modern Bar Stool",
+    "price": 90,
+    "company": "marcos",
+    "rating": 4.5
+  },
+  {
+    "name": "Elegant Daybed",
+    "price": 320,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Chic Accent Chair",
+    "price": 200,
+    "company": "caressa",
+    "rating": 4.6
+  },
+  {
+    "name": "Vintage Bookshelf",
+    "price": 160,
+    "company": "ikea",
+    "rating": 4.3
+  },
+  {
+    "name": "Bohemian Floor Lamp",
+    "price": 120,
+    "company": "marcos",
+    "rating": 4.2
+  },
+  {
+    "name": "Rustic End Table",
+    "price": 180,
+    "company": "liddy",
+    "rating": 4.4
+  },
+  {
+    "name": "Contemporary Chaise Lounge",
+    "price": 410,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Industrial Sideboard",
+    "price": 260,
+    "company": "ikea",
+    "rating": 4.6
+  },
+  {
+    "name": "Vintage Armchair",
+    "price": 75,
+    "company": "marcos",
+    "rating": 4.3
+  },
+  {
+    "name": "Rustic Coffee Table",
+    "price": 210,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Contemporary Sofa",
+    "price": 420,
+    "company": "caressa",
+    "rating": 4.7
+  },
+  {
+    "name": "Modern Desk",
+    "price": 180,
+    "company": "ikea",
+    "rating": 4.5
+  },
+  {
+    "name": "Elegant Dining Table",
+    "price": 150,
+    "company": "marcos",
+    "rating": 4.6
+  },
+  {
+    "name": "Leather Recliner",
+    "price": 320,
+    "company": "liddy",
+    "rating": 4.9
+  },
+  {
+    "name": "Industrial Bookshelf",
+    "price": 120,
+    "company": "caressa",
+    "rating": 4.4
+  },
+  {
+    "name": "Cozy Bed",
+    "price": 280,
+    "company": "ikea",
+    "rating": 4.7
+  },
+  {
+    "name": "Minimalist TV Stand",
+    "price": 90,
+    "company": "marcos",
+    "rating": 4.2
+  },
+  {
+    "name": "Velvet Ottoman",
+    "price": 200,
+    "company": "liddy",
+    "rating": 4.5
+  },
+  {
+    "name": "Antique Cabinet",
+    "price": 380,
+    "company": "caressa",
+    "rating": 4.8
+  },
+  {
+    "name": "Scandinavian Chair",
+    "price": 140,
+    "company": "ikea",
+    "rating": 4.6
+  },
+  {
+    "name": "Glamorous Vanity",
+    "price": 250,
+    "company": "marcos",
+    "rating": 4.3
+  },
+  {
+    "name": "Classic Side Table",
+    "price": 110,
+    "company": "liddy",
+    "rating": 4.4
+  },
+  {
+    "name": "Mid-Century Sofa",
+    "price": 370,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Floating Shelf",
+    "price": 60,
+    "company": "ikea",
+    "rating": 4.2
+  },
+  {
+    "name": "Chic Loveseat",
+    "price": 310,
+    "company": "marcos",
+    "rating": 4.7
+  },
+  {
+    "name": "Farmhouse Bench",
+    "price": 170,
+    "company": "liddy",
+    "rating": 4.5
+  },
+  {
+    "name": "Sleek Office Chair",
+    "price": 150,
+    "company": "caressa",
+    "rating": 4.6
+  },
+  {
+    "name": "Bohemian Pouf",
+    "price": 80,
+    "company": "ikea",
+    "rating": 4.3
+  },
+  {
+    "name": "Versatile Desk Lamp",
+    "price": 40,
+    "company": "marcos"
+  },
+  {
+    "name": "Ergonomic Recliner",
+    "price": 350,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Futuristic Bookcase",
+    "price": 190,
+    "company": "caressa",
+    "rating": 4.4
+  },
+  {
+    "name": "Space-Saving Table",
+    "price": 120,
+    "company": "ikea",
+    "rating": 4.7
+  },
+  {
+    "name": "Plush Accent Chair",
+    "price": 230,
+    "company": "marcos",
+    "rating": 4.2
+  },
+  {
+    "name": "Vintage Bar Cart",
+    "price": 260,
+    "company": "liddy",
+    "rating": 4.5
+  },
+  {
+    "name": "Contemporary Bed Frame",
+    "price": 420,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Industrial Desk",
+    "price": 170,
+    "company": "ikea",
+    "rating": 4.6
+  },
+  {
+    "name": "Bohemian Rug",
+    "price": 150,
+    "company": "marcos",
+    "rating": 4.3
+  },
+  {
+    "name": "Elegant Vanity",
+    "price": 340,
+    "company": "liddy",
+    "rating": 4.7
+  },
+  {
+    "name": "Retro Armchair",
+    "price": 280,
+    "company": "caressa",
+    "rating": 4.8
+  },
+  {
+    "name": "Scandinavian Dining Table",
+    "price": 190,
+    "company": "ikea",
+    "rating": 4.4
+  },
+  {
+    "name": "Minimalist Sofa",
+    "price": 380,
+    "company": "marcos",
+    "rating": 4.6
+  },
+  {
+    "name": "Glamorous Chandelier",
+    "price": 220,
+    "company": "liddy"
+  },
+  {
+    "name": "Mid-Century Cabinet",
+    "price": 350,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Cozy Bedside Table",
+    "price": 140,
+    "company": "ikea",
+    "rating": 4.7
+  },
+  {
+    "name": "Modern Bar Stool",
+    "price": 90,
+    "company": "marcos",
+    "rating": 4.5
+  },
+  {
+    "name": "Elegant Daybed",
+    "price": 320,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Chic Accent Chair",
+    "price": 200,
+    "company": "caressa",
+    "rating": 4.6
+  },
+  {
+    "name": "Vintage Bookshelf",
+    "price": 160,
+    "company": "ikea",
+    "rating": 4.3
+  },
+  {
+    "name": "Bohemian Floor Lamp",
+    "price": 120,
+    "company": "marcos",
+    "rating": 4.2
+  },
+  {
+    "name": "Rustic End Table",
+    "price": 180,
+    "company": "liddy",
+    "rating": 4.4
+  },
+  {
+    "name": "Contemporary Chaise Lounge",
+    "price": 410,
+    "company": "caressa",
+    "rating": 4.9
+  },
+  {
+    "name": "Industrial Sideboard",
+    "price": 260,
+    "company": "ikea",
+    "rating": 4.6
+  },
+  {
+    "name": "Vintage Armchair",
+    "price": 75,
+    "company": "marcos",
+    "rating": 4.3
+  },
+  {
+    "name": "Rustic Coffee Table",
+    "price": 210,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Contemporary Sofa",
+    "price": 420,
+    "company": "caressa",
+    "rating": 4.7
+  },
+  {
+    "name": "Modern Desk",
+    "price": 180,
+    "company": "ikea",
+    "rating": 4.5
+  },
+  {
+    "name": "Elegant Dining Table",
+    "price": 150,
+    "company": "marcos",
+    "rating": 4.6
+  },
+  {
+    "name": "Leather Recliner",
+    "price": 320,
+    "company": "liddy",
+    "rating": 4.9
+  },
+  {
+    "name": "Industrial Bookshelf",
+    "price": 120,
+    "company": "caressa",
+    "rating": 4.4
+  },
+  {
+    "name": "Cozy Bed",
+    "price": 280,
+    "company": "ikea",
+    "rating": 4.7
+  },
+  {
+    "name": "Minimalist TV Stand",
+    "price": 90,
+    "company": "marcos",
+    "rating": 4.2
+  },
+  {
+    "name": "Velvet Ottoman",
+    "price": 200,
+    "company": "liddy",
+    "rating": 4.5
+  },
+  {
+    "name": "Antique Cabinet",
+    "price": 380,
+    "company": "caressa",
+    "rating": 4.8
+  },
+  {
+    "name": "Scandinavian Chair",
+    "price": 140,
+    "company": "ikea",
+    "rating": 4.6
+  }
+]
