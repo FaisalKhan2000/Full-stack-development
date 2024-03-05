@@ -21,20 +21,17 @@ const productSchema = new mongoose.Schema({
 // we need to now create an model
 const Product = new mongoose.model("Product", productSchema);
 
-
 // 💖 Thank You So Much For Choosing My Video 💖
 
 // Hi everyone,
 
 // I'm absolutely thrilled – we're almost at 600K subscribers for our MongoDB course! This course was a true labor of love, and it's been amazing to see how it's helping you all.
 
-// If you've enjoyed what we're doing and want to be part of our journey, hitting that Subscribe button would mean the world to me. Let's keep growing and learning together! 
+// If you've enjoyed what we're doing and want to be part of our journey, hitting that Subscribe button would mean the world to me. Let's keep growing and learning together!
 // Here is the link: https://www.youtube.com/thapatechnical
 
 // With gratitude,
-// Thapa Technical 
-
-
+// Thapa Technical
 
 //? 2nd step while inserting the data
 const data1 = {
@@ -78,23 +75,22 @@ const main = async () => {
 
 main();
 
-db.Students.insertMany(
-  [{
+db.Students.insertMany([
+  {
     name: "Binamra",
     age: 20,
   },
   {
     name: "Thapa",
     age: 21,
-  }]
-);
+  },
+]);
 
-
- {
-    "name": "Binamra",
-    "age": 20,
-  }
-  {
-    "name": "Thapa",
-    "age": 21,
-  }
+//  {
+//     "name": "Binamra",
+//     "age": 20,
+//   }
+//   {
+//     "name": "Thapa",
+//     "age": 21,
+//   }

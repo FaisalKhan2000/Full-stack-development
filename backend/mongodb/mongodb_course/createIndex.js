@@ -5,11 +5,13 @@
 // db.products.find({ price: { $gt: 100 } }).count();
 
 //? We can use explain() method to understand it more better
+db.products.find({ price: { $gt: 100 } }).explain();
 //? Also we can add explain('executionStats') to understand more in depth
+db.products.find({ price: { $gt: 100 } }).explain("executionStats");
 
 //? Find name= air fryer from the products collections
 // db.products.explain('executionStats').find({'name':'Air Fryer'})
-//! executionTimeMillis: 18,
+//! executionTimeMillis: 8,
 
 //* Creating Indexes
 //? Indexes can be created using the createIndex() method.
@@ -17,7 +19,9 @@
 //? In this case, 1 represents ascending order, and -1 would be descending order.
 
 // db.products.createIndex({name:1})
-//! executionTimeMillis: 8
+
+db.products.explain("executionStats").find({ name: "Air Fryer" });
+//! executionTimeMillis: 3
 
 //* Getting Indexes
 // db.products.getIndexes();
@@ -42,4 +46,4 @@
 // db.products.createIndex({price:1})
 
 // Now lets check the time its taking
-// executionTimeMillis: 26, it is taking almost double time
+// executionTimeMillis: 23, it is taking almost double time
