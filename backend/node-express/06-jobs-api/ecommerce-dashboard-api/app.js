@@ -4,7 +4,7 @@ require("express-async-errors");
 const express = require("express");
 const app = express();
 
-// connectDB
+// connectDB -
 const connectDB = require("./db/connect");
 connectDB();
 
