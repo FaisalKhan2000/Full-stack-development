@@ -8,8 +8,10 @@
 // import LightDarkMode from "./components/08light-dark-mode/LightDarkMode";
 // import ScrollIndicator from "./components/09scroll-indicator/ScrollIndicator";
 // import TabTest from "./components/10custom-tabs/TabTest";
+// import ModalTest from "./components/11custom-modal/ModalTest";
+// import GithubProfileFinder from "./components/12github-profile-finder/GithubProfileFinder";
 
-import ModalTest from "./components/11custom-modal/ModalTest";
+import SearchAutocomplete from "./components/13search-autocomplete/SearchAutocomplete";
 
 // import ImageSlider from "./components/04image-slider/ImageSlider";
 
@@ -51,7 +53,13 @@ function App() {
       {/* <TabTest /> */}
 
       {/* Custom Modal Component */}
-      <ModalTest />
+      {/* <ModalTest /> */}
+
+      {/* Github Profile Finder */}
+      {/* <GithubProfileFinder /> */}
+
+      {/* Search Autocomplete */}
+      <SearchAutocomplete />
     </div>
   );
 }
