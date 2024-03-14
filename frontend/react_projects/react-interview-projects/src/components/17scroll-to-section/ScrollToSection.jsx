@@ -47,7 +47,7 @@ function ScrollToSection() {
   ];
 
   function handleScrollToSection() {
-    // get current position
+    // get  position
     let pos = ref.current.getBoundingClientRect().top;
 
     window.scrollTo({
