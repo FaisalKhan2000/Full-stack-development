@@ -1,6 +1,7 @@
 // import Accordion from "./components/01accordion/Accordion";
 // import RandomColor from "./components/02random-color/RandomColor";
 // import StarRating from "./components/03star-rating/StarRating";
+// import ImageSlider from "./components/04image-slider/ImageSlider";
 // import LoadMoreData from "./components/05load-more-data/LoadMoreData";
 // import TreeView from "./components/06treeView/TreeView";
 // import menus from "./components/06treeView/data";
@@ -10,10 +11,12 @@
 // import TabTest from "./components/10custom-tabs/TabTest";
 // import ModalTest from "./components/11custom-modal/ModalTest";
 // import GithubProfileFinder from "./components/12github-profile-finder/GithubProfileFinder";
+// import SearchAutocomplete from "./components/13search-autocomplete/SearchAutocomplete";
+// import TestFetch from "./components/14use-fetch/TestFetch";
+// import UseWindowResizeTest from "./components/15use-window-resize/UseWindowResizeTest";
+// import ScrollToTopAndBottom from "./components/16scroll-to-top-bottom/ScrollToTopAndBottom";
 
-import SearchAutocomplete from "./components/13search-autocomplete/SearchAutocomplete";
-
-// import ImageSlider from "./components/04image-slider/ImageSlider";
+import ScrollToSection from "./components/17scroll-to-section/ScrollToSection";
 
 function App() {
   return (
@@ -59,7 +62,19 @@ function App() {
       {/* <GithubProfileFinder /> */}
 
       {/* Search Autocomplete */}
-      <SearchAutocomplete />
+      {/* <SearchAutocomplete /> */}
+
+      {/* useFetch - Custom Hook */}
+      {/* <TestFetch /> */}
+
+      {/* Use Window Resize Hook Test */}
+      {/* <UseWindowResizeTest /> */}
+
+      {/* Scroll to Top And Bottom */}
+      {/* <ScrollToTopAndBottom /> */}
+
+      {/* Scroll to a particlar section */}
+      <ScrollToSection />
     </div>
   );
 }
