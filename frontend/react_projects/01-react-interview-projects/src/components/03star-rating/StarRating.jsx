@@ -8,8 +8,8 @@ import "./star-rating.css";
 3. set the index to index += 1 since, index starts with 0
 4. create onClick, onMouseEnter, onMouseLeave
 5. create 3 methods handleClick, handleMouseEnter, handleMouseLeave, all of which accepts index as parameter
-6. take getCurrentIndex as paramtere in each of the methods
-7. create a className with conditon className={index <= (hover || rating) ? "active" : "inactive"}, which colors the stars on the following condition
+6. take getCurrentIndex as parameter in each of the methods
+7. create a className with condition className={index <= (hover || rating) ? "active" : "inactive"}, which colors the stars on the following condition
 8. for handleClick => setRating(getCurrenIndex) , handleMouseEnter => setHover(getCurrentIndex) and handleMouseLeave => setHover(rating)
 
 */
