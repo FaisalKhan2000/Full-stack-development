@@ -11,6 +11,7 @@ import "./star-rating.css";
 6. take getCurrentIndex as paramtere in each of the methods
 7. create a className with conditon className={index <= (hover || rating) ? "active" : "inactive"}, which colors the stars on the following condition
 8. for handleClick => setRating(getCurrenIndex) , handleMouseEnter => setHover(getCurrentIndex) and handleMouseLeave => setHover(rating)
+
 */
 
 function StarRating({ noOfStars = 5 }) {
